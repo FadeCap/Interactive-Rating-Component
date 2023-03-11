@@ -8,6 +8,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
   <title>Frontend Mentor | Interactive rating component</title>
 
 </head>
@@ -15,54 +16,48 @@
 <body>
 
   <!-- Rating state start -->
-  <div class="rating-container">
-    <div class="star-icon-circle">
-      <img class="star-icon" src="images/icon-star.svg" alt="Star icon" />
-    </div>
-    <div class="text-container">
-      <h1>How did we do?</h1>
-      <p>
-        Please let us know how we did with your support request. All feedback is appreciated
-        to help us improve our offering!
-      </p>
-    </div>
-    <div class="rating-btn">
-      <button class="1-btn number-btn">1</button>
-      <button class="2-btn number-btn">2</button>
-      <button class="3-btn number-btn">3</button>
-      <button class="4-btn number-btn">4</button>
-      <button class="5-btn number-btn">5</button>
-    </div>
-    <button class="submit-btn" type="submit">S U B M I T</button>
-
-    <div class="thank-you-card">
-      <img class="thank-you-img" src="images/illustration-thank-you.svg" alt="Phone illustration">
-      <div class="thank-you-text">
-        <div class="rating-text">
-          <h1>
-            You selected 3 out of 5
-          </h1>
+  <main class="main">
+    <div class="card-container">
+      <div id="rating-selector-card" class="rating-container">
+        <div class="star-icon-circle">
+          <img class="star-icon" src="images/icon-star.svg" alt="Star icon" />
         </div>
-        <h2>
-          Thank you!
-        </h2>
-        <p>
-          We appreciate you taking the time to give a rating. If you ever need more support,
-          don’t hesitate to get in touch!
-        </p>
+        <div class="text-container">
+          <h1>How did we do?</h1>
+          <p>
+            Please let us know how we did with your support request. All feedback is appreciated
+            to help us improve our offering!
+          </p>
+        </div>
+        <div class="rating-btn">
+          <button class="number-btn">1</button>
+          <button class="number-btn">2</button>
+          <button class="number-btn">3</button>
+          <button class="number-btn">4</button>
+          <button class="number-btn">5</button>
+        </div>
+        <button id="submit-btn" class="submit-btn" type="submit">S U B M I T</button>
+      </div>
+      <div id="thank-you-card" class="thank-you-card">
+        <img class="thank-you-img" src="images/illustration-thank-you.svg" alt="Phone illustration">
+        <div class="thank-you-text">
+          <div id="rating-text" class="rating-text">
+            <h1>
+              You selected X out of 5
+            </h1>
+          </div>
+          <h2>
+            Thank you!
+          </h2>
+          <p>
+            We appreciate you taking the time to give a rating. If you ever need more support,
+            don’t hesitate to get in touch!
+          </p>
+        </div>
       </div>
     </div>
+  </main>
 
-  </div>
-
-
-
-
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
 </body>
 
 </html>
